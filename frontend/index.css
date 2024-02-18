@@ -1,0 +1,128 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    margin: 0px;
+    background-color: #181818;
+}
+.container{
+    width: 1000px;
+    height: 1000px;
+    overflow-y: auto;
+    margin: 10px auto;
+    background-color: black;
+    border: 1px solid rgb(18, 18, 18);
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+}   
+.container hr{
+    border-width: 3px;
+    border-color: rgba(0, 0, 0, 0.468);
+    width: 90%;
+}
+.logo-holder{
+    margin-left: 10px;
+    border-radius: 100%; 
+    width: 80px;     
+    height: 80px; 
+    object-fit: contain;
+}
+.balance-holder{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+    font-size: 1em;
+    color: rgb(157, 156, 156);
+    font-size: smaller;
+}
+.balance-holder h2{
+    font-size: smaller;
+}
+.balance{
+    color: white;
+    font-size: 40px;
+}
+
+.income{
+    color: greenyellow;
+    font-size: 20px;
+}
+
+.Expenses{
+    color: red;
+    font-size: 20px;
+}
+
+.toggle{
+    display: flex;
+    margin-top: -25px;
+    padding: 20px;
+    justify-content: right;
+}
+.toggle button{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: greenyellow;
+    font-size: 30px;
+    font-weight: bold;
+}
+.add-transaction{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+.add-transaction input ,select,button{
+    border: 1px solid yellowgreen;
+    margin: 2px;
+}
+.add-transaction button{
+    padding: 7px;
+    width: 130px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: greenyellow;
+    border-radius: 40px;
+}
+.transaction-holder{
+    margin: auto;
+    height: auto;
+    width: 900px;
+    border: 1px solid rgb(38, 37, 37);
+}
+.transaction-header{
+    padding: 10px;
+    margin-left: 14px;
+    border-bottom: 1px solid #dddddd23;
+    text-align: left;
+}
+.transaction-header{
+    color: rgb(157, 156, 156);
+    font-size: small;
+}
+.transaction-container{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+.transactions-table td {
+    padding: 10px;
+    border-bottom: 1px solid #dddddd23;
+}
+.transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td button{
+    background-color: yellowgreen;
+    padding: 5px;
+    width: 45px;
+    border-radius: 5px;
+}
+Input,select{
+    margin-right: 7px;
+    padding: 4px;
+    border-radius: 15px;
+}
+

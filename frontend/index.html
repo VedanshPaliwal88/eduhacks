@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Logo Holder -->
+
+        <header class="main-header">
+            <div class="logo-holder">
+                <a href="#"><img src="media/logo.png" alt="Logo" class="logo-holder"></a>
+            </div>
+        </header>
+
+        <!-- Balance Holder -->
+
+        <div class="balance-holder">
+            <div>
+                <h2>Balance</h2>
+                <span id="balance" class="balance">0.00</span><br><br>
+                <span id="transaction-count">0</span>
+                <p> </p>
+
+            </div>
+            <div>
+                <h2>Income</h2>
+                <div class="income">INR <span id="income" class="income">0.00</span></div>
+                <h2>Expenses</h2>
+                <div class="Expenses">INR <span id="expenses" class="Expenses">0.00</span></div>
+            </div>
+        </div>
+
+
+        <hr><br>
+
+
+        <!-- Button to add new transaction -->
+        <div style="color: white; margin-left: 50px; font-weight: bold; font-size: 25px;">Transactions</div>
+        <div class="toggle">
+            <button onclick="toggleTransactionForm()">+</button>
+        </div>
+        <!-- Form to add a new transaction (Initially hidden) -->
+        <div class="add-transaction" id="transaction-form" style="display: none;">
+            <input type="text" id="transaction-name" placeholder="Transaction Name">
+            <input type="number" id="transaction-value" placeholder="Transaction Value">
+            <input type="datetime-local" id="transaction-date">
+            <button onclick="addTransaction()">Add Transaction</button>
+        </div>
+
+        <!-- Transaction display -->
+        <div class="transaction-holder">
+            <div id="transactions-container" class="transaction-container"></div>
+        </div>
+    </div>
+</body>
+
+</html>
